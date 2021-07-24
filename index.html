@@ -1,28 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>ITGurukul</title>
-    <link rel="shortcut icon" href="./images/web_logo.svg" type="image/x-icon">
-</head>
-<body>
-    <header class="nav-container">
-       <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+      integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/index_style.css" />
+  </head>
+  <body>
+    <!-- <header class="row">
+      
+    </header> -->
+    <!-- <nav class="navbar navbar-light sticky-top" role="navigation">
       <div class="container">
-
-          <a class="navbar-brand" href="#">
-              <img src="./images/2image.png" alt="ITGurukul" width=" 160" >
-            </a>
+        <div
+          class="navbar-brand bg-light rounded-10 px-2"
+          href="#"
+          id="nav-brand"
+        >
+          <img src="../assets/crop.svg" alt="" height="40px" />
         </div>
 
-  </div>
-</nav>
-    </header>
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <div class="navbar-brand bg-white rounded-10 px-2" id="nav-brand">
+          <img src="../assets/crop.svg" alt="" height="40px" />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-dark text-light"
+              aria-current="page"
+              href="#"
+              >Apply</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-warning mx-2" href="#"
+              >Book a Demo</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="logosec container-fluid p-3">
+      <div class="row">
+        <div class="col">
+          <div id="logocontainer">
+            <img
+              src="../assets/web_logo.svg"
+              class="logo"
+              alt=""
+              width="200"
+              height="200"
+            />
+          </div>
+        </div>
+        <div class="col-md mt-5 pb-5 mx-auto">
+          <span class="txt-anim2">FOCUS LEARN GROW</span>
+          <span class="txt-anim p-2">welcome</span>
+          <!-- <span class="display-3 bg-dark text-light rounded-3 txt-anim"
+            >start explore</span
+          > -->
+          <span class="txt-anim3 text-light bg-dark rounded-10 px-3">
+            keep Exploring
+          </span>
+        </div>
+      </div>
+      <div></div>
+    </section>
+
+    <section class="container-fluid bg-dark circle-container">
+      <div class="d-flex h-100 py-5 flex-column justify-content-between">
+        <p class="display-4 cir-intro-text text-light">
+          We Beleive in <br />
+          the golden old ways
+        </p>
+        <div class="circle cir-1 text-dark bg-light">
+          <!-- <img src="../assets/yoga-gettyimages-1142820079-promo.jpg" alt="" /> -->
+          <!-- <p class="display-5">Morning Meditation</p> -->
+          <p class="display-5 text-dark bg-light rounded-10">
+            Morning Meditation
+          </p>
+          <p class="cir-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            suscipit saepe reiciendis odio, minus iste delectus voluptatibus rem
+            unde et, sequi cupiditate natus mollitia quos, nisi repellendus?
+            Qui, dolores perferendis!
+          </p>
+        </div>
+        <div class="circle cir-2 text-dark bg-light">
+          <p class="display-5 text-dark bg-light rounded-10">
+            Work with Experienced People
+          </p>
+          <p class="cir-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            suscipit saepe reiciendis odio, minus iste delectus voluptatibus rem
+            unde et, sequi cupiditate natus mollitia quos, nisi repellendus?
+            Qui, dolores perferendis!
+          </p>
+        </div>
+        <div class="circle cir-3 text-dark bg-light">
+          <p class="display-5 text-dark bg-light rounded-10">
+            Learn in Real-time
+          </p>
+          <p class="cir-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            suscipit saepe reiciendis odio, minus iste delectus voluptatibus rem
+            unde et, sequi cupiditate natus mollitia quos, nisi repellendus?
+            Qui, dolores perferendis!
+          </p>
+        </div>
+        <div class="circle cir-4 text-dark bg-light">
+          <p class="display-5 text-dark bg-light rounded-10">
+            Relax in your free time
+          </p>
+          <p class="cir-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            suscipit saepe reiciendis odio, minus iste delectus voluptatibus rem
+            unde et, sequi cupiditate natus mollitia quos, nisi repellendus?
+            Qui, dolores perferendis!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-container bg-dark">
+      <div class="contact container bg-white p-3 rounded-10">
+        <p class="display-3 mt-5">contact us</p>
+        <form class="form">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  class="form-control shadow-none"
+                  required
+                  placeholder="enter your email address........"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="phone-number" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  name="phone-number"
+                  class="form-control shadow-none"
+                  required
+                  placeholder="enter your preffered phone number........"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="phone-number" class="form-label">Message</label>
+              <textarea
+                type="text-area"
+                name="phone-number"
+                class="form-control shadow-none"
+                required
+                placeholder="enter your preffered phone number........"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn btn-secondary my-3" type="submit">submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"
+      integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"
+      integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/circles.js"></script>
+    <script src="../js/contactUs.js"></script>
+  </body>
 </html>
