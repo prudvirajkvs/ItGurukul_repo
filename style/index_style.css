@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+}
+.logocontainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logosec {
+  /* background-color: black; */
+}
+.txt-anim,
+.txt-anim2,
+.txt-anim3 {
+  font-size: 60px;
+  position: absolute;
+  /*right: 20px;
+  top: 50%; */
+}
+header {
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  backdrop-filter: blur(6px);
+}
+.rounded-10 {
+  border-radius: 10px;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+.circle-container {
+  position: relative;
+}
+.cir-1,
+.cir-2,
+.cir-3,
+.cir-4 {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.cir-1 {
+  background-image: url(../assets/yoga-gettyimages-1142820079-promo.jpg);
+}
+.cir-2 {
+  background-image: url(../assets/Interactive_workplace.png);
+}
+.cir-3 {
+  background-image: url(../assets/interactive-whiteboard-smart-board-presentation-business-people-businessman-standing-touchscreen-data-slides-showing-218129874.jpg);
+}
+.cir-4 {
+  background-image: url(../assets/woman-relaxing-3409912-2849586.png);
+}
+.cir-1 p,
+.cir-2 p,
+.cir-3 p,
+.cir-4 p {
+  color: white;
+}
+.cir-1 .cir-text,
+.cir-2 .cir-text,
+.cir-3 .cir-text,
+.cir-4 .cir-text {
+  position: absolute;
+  bottom: 10%;
+}
+
+.cir-intro-text {
+  position: absolute;
+  right: 30px;
+}
+.btn-outline-warning {
+  color: #ffc107 !important;
+}
+.btn-outline-warning:hover {
+  color: black !important;
+}
+.contact {
+  position: absolute;
+}
