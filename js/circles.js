@@ -8,8 +8,8 @@ const t = new gsap.timeline({ onstart: circlesStart });
 
 const textTween = gsap.fromTo(
   '.cir-intro-text',
-  { scale: 5 },
-  { opacity: 1, scale: 1, duration: 5 }
+  { scale: 5, top: '10%' },
+  { opacity: 1, scale: 1, duration: 5, right: '10%' }
 );
 const circle_tween = [
   gsap.fromTo(
