@@ -99,7 +99,7 @@ t2.add(tween4);
 t2.add(tween5);
 const scene = new ScrollMagic.Scene({
   triggerElement: '.logosec',
-  duration: 5000,
+  duration: () => (windowWidth > 756 ? 5000 : 3000),
   triggerHook: 0,
   offset: 50,
   endOffset: 50,

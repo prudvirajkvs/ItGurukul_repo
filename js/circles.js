@@ -16,9 +16,9 @@ const circle_tween = [
     '.circle',
     { scale: 1 },
     {
-      width: '100px',
-      height: '100px',
-      x: 100,
+      width: () => (windowWidth > 756 ? '100px' : '60px'),
+      height: () => (windowWidth > 756 ? '100px' : '60px'),
+      x: () => (windowWidth > 756 ? 100 : 10),
       duration: 5,
       ease: 'ease',
       onstart: circlesStart,
@@ -37,7 +37,7 @@ const circle_tween_square1 = [
     borderRadius: '10px',
     duration: 10,
     position: 'absolute',
-
+    zIndex: 1,
     offset: 5,
   }),
   gsap.fromTo(
@@ -112,7 +112,7 @@ t.add(circle_tween_square3);
 t.add(circle_tween_square4);
 const circle_scene = new ScrollMagic.Scene({
   triggerElement: '.circle-container',
-  duration: 6000,
+  duration: () => (windowWidth > 756 ? 6000 : 3000),
   triggerHook: 0,
   offset: () => (windowWidth > 756 ? 0 : -100),
 })
