@@ -28,6 +28,13 @@ section {
   /*right: 20px;
   top: 50%; */
 }
+.txt-anim {
+  color: #43190b;
+  right: 10%;
+}
+.txt-anim2 {
+  color: #f15a29;
+}
 header {
   position: sticky;
   top: 0;

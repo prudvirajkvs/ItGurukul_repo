@@ -33,6 +33,7 @@ const tween3 = gsap.fromTo(
     opacity: 1,
     display: 'block',
     bottom: '30%',
+    scale: 2,
 
     duration: 10,
   },
