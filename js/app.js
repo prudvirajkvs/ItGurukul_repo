@@ -5,7 +5,6 @@ const controller = new ScrollMagic.Controller();
 
 //timelines ***************
 const t2 = new gsap.timeline((id = 1));
-const t1 = new gsap.timeline();
 
 // t2.duration(30);
 /*****time lines-end */
@@ -77,7 +76,3 @@ const scene = new ScrollMagic.Scene({
 
   .setPin('.logosec')
   .addTo(controller);
-
-const scene2 = new ScrollMagic.Scene({
-  triggerElement: '.circles',
-});

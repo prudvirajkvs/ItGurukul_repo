@@ -104,3 +104,16 @@ header {
 .contact {
   position: absolute;
 }
+.offcanvas {
+  backdrop-filter: blur(6px) !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.offcanvas h5 {
+  color: #f15a29 !important;
+}
+.text-gurukul {
+  background-color: #f15a29;
+  color: white;
+}

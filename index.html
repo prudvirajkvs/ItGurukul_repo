@@ -20,41 +20,76 @@
     />
   </head>
   <body>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          ITGurukul
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+        <span class="nav-item">
+          <a
+            class="nav-link btn btn-dark text-light m-2"
+            aria-current="page"
+            href="#"
+            >Apply</a
+          >
+        </span>
+        <span class="nav-item">
+          <a class="nav-link btn btn-outline-warning m-2" href="#"
+            >Book a Demo</a
+          >
+        </span>
+        <span class="nav-item">
+          <a class="nav-link text-gurukul m-2 btn" href="#">Pricing</a>
+        </span>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-sm sticky-top">
       <div class="container-fluid">
         <div class="navbar-brand bg-white rounded-10 px-2" id="nav-brand">
           <img src="../assets/crop.svg" alt="" height="40px" />
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+        <a
+          class="btn btn-secondary d-md-none"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasWithBothOptions"
+          role="button"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          O
+        </a>
+        <div class="navbar-nav ms-auto d-none d-md-flex d-flex flex-row">
+          <span class="nav-item">
             <a
               class="nav-link btn btn-dark text-light"
               aria-current="page"
               href="#"
               >Apply</a
             >
-          </li>
-          <li class="nav-item">
+          </span>
+          <span class="nav-item">
             <a class="nav-link btn btn-outline-warning mx-2" href="#"
               >Book a Demo</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
+          </span>
+          <span class="nav-item">
+            <a class="nav-link text-gurukul btn" href="#">Pricing</a>
+          </span>
+        </div>
       </div>
     </nav>
     <section class="logosec container-fluid p-3">
@@ -70,15 +105,15 @@
             />
           </div>
         </div>
-        <div class="col-md mt-5 pb-5 mx-auto">
-          <span class="txt-anim2">FOCUS LEARN GROW</span>
-          <span class="txt-anim">welcome</span>
+        <div class="col mt-5 pb-5 mx-auto">
+          <p class="txt-anim2">FOCUS LEARN GROW</p>
+          <p class="txt-anim">welcome</p>
           <!-- <span class="display-3 bg-dark text-light rounded-3 txt-anim"
             >start explore</span
           > -->
-          <span class="txt-anim3 text-light bg-dark rounded-10 px-3">
+          <p class="txt-anim3 text-light bg-dark rounded-10 px-3">
             keep Exploring
-          </span>
+          </p>
         </div>
       </div>
       <div></div>
