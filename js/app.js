@@ -37,8 +37,8 @@ const tween2 = gsap.to(
   {
     left: () => (windowWidth > 756 ? 400 : '50%'),
     top: () => (windowWidth > 756 ? '50%' : '30%'),
-    transform: 'translate(-50%,-50%)',
-    scale: () => (windowWidth > 756 ? 3 : 0),
+
+    scale: () => (windowWidth > 756 ? 3 : 1),
     duration: 10,
     rotation: 0,
   },

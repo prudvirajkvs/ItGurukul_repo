@@ -32,7 +32,8 @@ const circle_tween_square1 = [
     left: '50%',
     top: '20%',
     transform: 'translate(-50%, 0)',
-    width: '60%',
+    width: () => (windowWidth > 756 ? '60%' : '80%'),
+
     height: '60%',
     borderRadius: '10px',
     duration: 10,
@@ -51,7 +52,7 @@ const circle_tween_square2 = [
     left: '50%',
     top: '20%',
     transform: 'translate(-50%, 0)',
-    width: '60%',
+    width: () => (windowWidth > 756 ? '60%' : '80%'),
     height: '60%',
     borderRadius: '10px',
 
@@ -70,7 +71,8 @@ const circle_tween_square3 = [
     left: '50%',
     top: '20%',
     transform: 'translate(-50%, 0)',
-    width: '60%',
+    width: () => (windowWidth > 756 ? '60%' : '80%'),
+
     height: '60%',
     borderRadius: '10px',
 
@@ -89,7 +91,8 @@ const circle_tween_square4 = [
     left: '50%',
     top: '20%',
     transform: 'translate(-50%, 0)',
-    width: '60%',
+    width: () => (windowWidth > 756 ? '60%' : '80%'),
+
     height: '60%',
     borderRadius: '10px',
 
@@ -112,7 +115,7 @@ t.add(circle_tween_square3);
 t.add(circle_tween_square4);
 const circle_scene = new ScrollMagic.Scene({
   triggerElement: '.circle-container',
-  duration: () => (windowWidth > 756 ? 6000 : 3000),
+  duration: 6000,
   triggerHook: 0,
   offset: () => (windowWidth > 756 ? 0 : -100),
 })
