@@ -105,6 +105,6 @@ const scene = new ScrollMagic.Scene({
   endOffset: 50,
 })
   .setTween(t2)
-  .addIndicators()
+
   .setPin('.logosec')
   .addTo(controller);

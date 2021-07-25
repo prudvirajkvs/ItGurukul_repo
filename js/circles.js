@@ -118,5 +118,5 @@ const circle_scene = new ScrollMagic.Scene({
 })
   .setTween(t)
   .setPin('.circle-container')
-  .addIndicators()
+
   .addTo(controller);
