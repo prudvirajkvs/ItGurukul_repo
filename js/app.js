@@ -101,7 +101,7 @@ const scene = new ScrollMagic.Scene({
   triggerElement: '.logosec',
   duration: () => (windowWidth > 756 ? 5000 : 3000),
   triggerHook: 0,
-  offset: 50,
+  offset: () => (windowWidth > 756 ? 50 : -100),
   endOffset: 50,
 })
   .setTween(t2)
