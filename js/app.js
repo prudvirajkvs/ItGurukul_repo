@@ -35,10 +35,10 @@ const tween2 = gsap.to(
   '.logo',
 
   {
-    left: () => (windowWidth > 756 ? 400 : 0),
-    top: () => (windowWidth > 756 ? '50%' : '-100%'),
-    transform: 'translate(-50%,-50%%)',
-    scale: 3,
+    left: () => (windowWidth > 756 ? 400 : '50%'),
+    top: () => (windowWidth > 756 ? '50%' : '30%'),
+    transform: 'translate(-50%,-50%)',
+    scale: () => (windowWidth > 756 ? 3 : 0),
     duration: 10,
     rotation: 0,
   },
