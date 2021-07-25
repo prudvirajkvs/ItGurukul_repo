@@ -10,7 +10,7 @@ contact_time.add(contact_tween);
 
 const contact_scene = new ScrollMagic.Scene({
   triggerElement: '.contact-container',
-  duration: 1000,
+  duration: 900,
   triggerHook: 0,
 })
   .setTween(contact_time)

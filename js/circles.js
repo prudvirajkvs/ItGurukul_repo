@@ -8,7 +8,7 @@ const t = new gsap.timeline({ onstart: circlesStart });
 
 const textTween = gsap.fromTo(
   '.cir-intro-text',
-  { scale: 5, top: '10%' },
+  { scale: () => (windowWidth > 756 ? 5 : 1.5), top: '10%' },
   { opacity: 1, scale: 1, duration: 5, right: '10%' }
 );
 const circle_tween = [
@@ -92,6 +92,7 @@ const circle_tween_square4 = [
     width: '60%',
     height: '60%',
     borderRadius: '10px',
+
     position: 'absolute',
 
     duration: 10,
@@ -113,7 +114,9 @@ const circle_scene = new ScrollMagic.Scene({
   triggerElement: '.circle-container',
   duration: 6000,
   triggerHook: 0,
+  offset: () => (windowWidth > 756 ? 0 : -100),
 })
   .setTween(t)
   .setPin('.circle-container')
+  .addIndicators()
   .addTo(controller);
